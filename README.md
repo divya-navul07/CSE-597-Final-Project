@@ -39,7 +39,7 @@ To evaluate the model, run: python evaluate.py --checkpoint path/to/model.ckpt
 
 # Experiments and Results: 
 
-Extensive evaluations were conducted to validate the model's performance. The model achieved significant improvements over traditional methods, with details provided in the results section of the repository.
+Extensive evaluations were conducted to validate the model's performance. The model achieved significant improvements over traditional methods.
 
 ![image](https://github.com/user-attachments/assets/667e1ca1-1087-4f84-8ddf-2c9d4439c7c5)
 
