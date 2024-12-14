@@ -9,10 +9,10 @@ Dataset: https://paperswithcode.com/dataset/iemocap
 
 
 # Overview
-This project focuses on the challenge of multimodal emotion recognition within conversations using a novel architecture that leverages both Graph Neural Networks (GNN) and Transformer models. It aims to accurately predict the emotions expressed in multi-party conversations by integrating auditory, visual, and textual data.
+This project focuses on the challenge of multimodal emotion recognition within conversations using a novel architecture that uses both Graph Neural Networks (GNN) and Transformer models. It aims to accurately predict the emotions expressed in multi-party conversations by integrating auditory, visual, and textual data.
 
 # Dataset
-The project utilizes the Interactive Emotional Dyadic Motion Capture (IEMOCAP) database, which contains detailed acted multi-modal emotional expressions. More details about the dataset can be found above.
+The project utilizes the IEMOCAP database, which contains detailed acted multi-modal emotional expressions. More details about the dataset can be found in the above Dataset link.
 
 # Model Architecture
 ![image](https://github.com/user-attachments/assets/e8abed1e-e73c-4c54-bec9-dc9edb9faf2c)
