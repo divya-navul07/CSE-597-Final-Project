@@ -1,6 +1,8 @@
 # CSE-597-Final-Project-COGMEN:COntextualized GNN based Multimodal Emotion recognitioN
 Paper: https://paperswithcode.com/paper/cogmen-contextualized-gnn-based-multimodal
 
+# SOTA: COGMEN
+
 Dataset: https://paperswithcode.com/dataset/iemocap
 
 ![image](https://github.com/user-attachments/assets/66cd9a71-ee8e-415c-a170-e834e3cfa4cf)
@@ -57,3 +59,5 @@ The key hyperparameters include:
 2. Batch Size
 3. Number of Epochs
 4. Window Size for Graph Formation
+
+The training and evaluation scripts were run on a Google Colab A100 GPU.
