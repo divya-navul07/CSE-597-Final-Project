@@ -1,0 +1,972 @@
+2024-12-12 23:14:59.275820: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-12-12 23:14:59.290912: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-12-12 23:14:59.311833: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8454] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-12-12 23:14:59.318169: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1452] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-12-12 23:14:59.333011: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-12-12 23:15:00.448664: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.10/dist-packages/torch_geometric/typing.py:68: UserWarning: An issue occurred while importing 'pyg-lib'. Disabling its usage. Stacktrace: /usr/local/lib/python3.10/dist-packages/libpyg.so: undefined symbol: _ZN2at4_ops10zeros_like4callERKNS_6TensorEN3c108optionalINS5_10ScalarTypeEEENS6_INS5_6LayoutEEENS6_INS5_6DeviceEEENS6_IbEENS6_INS5_12MemoryFormatEEE
+  warnings.warn(f"An issue occurred while importing 'pyg-lib'. "
+/usr/local/lib/python3.10/dist-packages/torch_geometric/typing.py:86: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /usr/local/lib/python3.10/dist-packages/torch_scatter/_version_cpu.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev
+  warnings.warn(f"An issue occurred while importing 'torch-scatter'. "
+/usr/local/lib/python3.10/dist-packages/torch_geometric/typing.py:97: UserWarning: An issue occurred while importing 'torch-cluster'. Disabling its usage. Stacktrace: /usr/local/lib/python3.10/dist-packages/torch_cluster/_version_cpu.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev
+  warnings.warn(f"An issue occurred while importing 'torch-cluster'. "
+/usr/local/lib/python3.10/dist-packages/torch_geometric/typing.py:113: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /usr/local/lib/python3.10/dist-packages/torch_spline_conv/_version_cpu.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/torch_geometric/typing.py:124: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /usr/local/lib/python3.10/dist-packages/torch_sparse/_version_cpu.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev
+  warnings.warn(f"An issue occurred while importing 'torch-sparse'. "
+Seed set
+12/12/2024 11:15:03 Loaded data.
+SeqContext-> USING Transformer
+args.drop_rate: 0.5
+Using Scheduler
+12/12/2024 11:15:03 Start training...
+train epoch 1: 100% 4/4 [00:04<00:00,  1.14s/it]
+12/12/2024 11:15:08 
+12/12/2024 11:15:08 [Epoch 1] [Loss: 5.451710] [Time: 4.541923]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+         hap     0.0000    0.0000    0.0000       144
+         sad     0.4587    0.8612    0.5986       245
+         neu     0.5642    0.2630    0.3588       384
+         ang     0.4605    0.8235    0.5907       170
+
+    accuracy                         0.4793       943
+   macro avg     0.3709    0.4869    0.3870       943
+weighted avg     0.4320    0.4793    0.4081       943
+
+12/12/2024 11:15:10 [Dev set] [f1 0.3800]
+12/12/2024 11:15:10 Save the best model.
+12/12/2024 11:15:10 [Test set] [f1 0.4081]
+train epoch 2: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:15:14 
+12/12/2024 11:15:14 [Epoch 2] [Loss: 5.028953] [Time: 3.152654]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.81s/it]
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/usr/local/lib/python3.10/dist-packages/sklearn/metrics/_classification.py:1531: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+         hap     0.0000    0.0000    0.0000       144
+         sad     0.4261    0.9061    0.5796       245
+         neu     0.6500    0.3724    0.4735       384
+         ang     0.6634    0.7882    0.7204       170
+
+    accuracy                         0.5292       943
+   macro avg     0.4349    0.5167    0.4434       943
+weighted avg     0.4950    0.5292    0.4733       943
+
+12/12/2024 11:15:16 [Dev set] [f1 0.4859]
+12/12/2024 11:15:16 Save the best model.
+12/12/2024 11:15:16 [Test set] [f1 0.4733]
+train epoch 3: 100% 4/4 [00:03<00:00,  1.22it/s]
+12/12/2024 11:15:20 
+12/12/2024 11:15:20 [Epoch 3] [Loss: 4.674233] [Time: 3.282270]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:02<00:00,  2.12s/it]
+              precision    recall  f1-score   support
+
+         hap     0.6429    0.1250    0.2093       144
+         sad     0.5875    0.9184    0.7166       245
+         neu     0.6972    0.5938    0.6414       384
+         ang     0.6732    0.8118    0.7360       170
+
+    accuracy                         0.6458       943
+   macro avg     0.6502    0.6122    0.5758       943
+weighted avg     0.6561    0.6458    0.6120       943
+
+12/12/2024 11:15:23 [Dev set] [f1 0.5591]
+12/12/2024 11:15:23 Save the best model.
+12/12/2024 11:15:23 [Test set] [f1 0.6120]
+train epoch 4: 100% 4/4 [00:03<00:00,  1.24it/s]
+12/12/2024 11:15:26 
+12/12/2024 11:15:26 [Epoch 4] [Loss: 4.471364] [Time: 3.214868]
+dev: 100% 1/1 [00:00<00:00,  1.27it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7971    0.3819    0.5164       144
+         sad     0.6534    0.9388    0.7705       245
+         neu     0.7850    0.6276    0.6975       384
+         ang     0.6698    0.8471    0.7481       170
+
+    accuracy                         0.7105       943
+   macro avg     0.7263    0.6988    0.6831       943
+weighted avg     0.7319    0.7105    0.6980       943
+
+12/12/2024 11:15:29 [Dev set] [f1 0.6293]
+12/12/2024 11:15:29 Save the best model.
+12/12/2024 11:15:29 [Test set] [f1 0.6980]
+train epoch 5: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:15:32 
+12/12/2024 11:15:32 [Epoch 5] [Loss: 4.262484] [Time: 3.161417]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8421    0.4444    0.5818       144
+         sad     0.6588    0.9143    0.7658       245
+         neu     0.8100    0.6328    0.7105       384
+         ang     0.6520    0.8706    0.7456       170
+
+    accuracy                         0.7200       943
+   macro avg     0.7407    0.7155    0.7009       943
+weighted avg     0.7471    0.7200    0.7116       943
+
+12/12/2024 11:15:35 [Dev set] [f1 0.6297]
+12/12/2024 11:15:35 Save the best model.
+12/12/2024 11:15:35 [Test set] [f1 0.7116]
+train epoch 6: 100% 4/4 [00:03<00:00,  1.17it/s]
+12/12/2024 11:15:38 
+12/12/2024 11:15:38 [Epoch 6] [Loss: 4.232553] [Time: 3.422890]
+dev: 100% 1/1 [00:00<00:00,  1.27it/s]
+test: 100% 1/1 [00:01<00:00,  1.78s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8750    0.5347    0.6638       144
+         sad     0.6353    0.8816    0.7385       245
+         neu     0.8514    0.6120    0.7121       384
+         ang     0.6234    0.8765    0.7286       170
+
+    accuracy                         0.7179       943
+   macro avg     0.7463    0.7262    0.7107       943
+weighted avg     0.7578    0.7179    0.7146       943
+
+12/12/2024 11:15:41 [Dev set] [f1 0.6736]
+12/12/2024 11:15:41 Save the best model.
+12/12/2024 11:15:41 [Test set] [f1 0.7146]
+train epoch 7: 100% 4/4 [00:03<00:00,  1.26it/s]
+12/12/2024 11:15:44 
+12/12/2024 11:15:44 [Epoch 7] [Loss: 4.049057] [Time: 3.162952]
+dev: 100% 1/1 [00:00<00:00,  1.26it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8667    0.5417    0.6667       144
+         sad     0.6688    0.8653    0.7544       245
+         neu     0.8505    0.6667    0.7474       384
+         ang     0.6298    0.8706    0.7309       170
+
+    accuracy                         0.7359       943
+   macro avg     0.7539    0.7361    0.7249       943
+weighted avg     0.7660    0.7359    0.7339       943
+
+12/12/2024 11:15:47 [Dev set] [f1 0.6965]
+12/12/2024 11:15:47 Save the best model.
+12/12/2024 11:15:47 [Test set] [f1 0.7339]
+train epoch 8: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:15:50 
+12/12/2024 11:15:50 [Epoch 8] [Loss: 3.893807] [Time: 3.161576]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8061    0.5486    0.6529       144
+         sad     0.7047    0.8571    0.7735       245
+         neu     0.8328    0.7005    0.7610       384
+         ang     0.6429    0.8471    0.7310       170
+
+    accuracy                         0.7444       943
+   macro avg     0.7466    0.7383    0.7296       943
+weighted avg     0.7612    0.7444    0.7423       943
+
+12/12/2024 11:15:53 [Dev set] [f1 0.6922]
+12/12/2024 11:15:53 [Test set] [f1 0.7423]
+train epoch 9: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:15:56 
+12/12/2024 11:15:56 [Epoch 9] [Loss: 3.899482] [Time: 3.157188]
+dev: 100% 1/1 [00:00<00:00,  1.28it/s]
+test: 100% 1/1 [00:02<00:00,  2.08s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8404    0.5486    0.6639       144
+         sad     0.7063    0.8735    0.7810       245
+         neu     0.8269    0.7214    0.7705       384
+         ang     0.6635    0.8235    0.7349       170
+
+    accuracy                         0.7529       943
+   macro avg     0.7593    0.7417    0.7376       943
+weighted avg     0.7682    0.7529    0.7505       943
+
+12/12/2024 11:15:59 [Dev set] [f1 0.7072]
+12/12/2024 11:15:59 Save the best model.
+12/12/2024 11:15:59 [Test set] [f1 0.7505]
+train epoch 10: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:16:02 
+12/12/2024 11:16:02 [Epoch 10] [Loss: 3.599651] [Time: 3.149080]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.82s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8690    0.5069    0.6404       144
+         sad     0.6975    0.8939    0.7835       245
+         neu     0.8280    0.7396    0.7813       384
+         ang     0.6881    0.8176    0.7473       170
+
+    accuracy                         0.7582       943
+   macro avg     0.7707    0.7395    0.7381       943
+weighted avg     0.7751    0.7582    0.7542       943
+
+12/12/2024 11:16:05 [Dev set] [f1 0.7147]
+12/12/2024 11:16:05 Save the best model.
+12/12/2024 11:16:05 [Test set] [f1 0.7542]
+train epoch 11: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:16:08 
+12/12/2024 11:16:08 [Epoch 11] [Loss: 3.583320] [Time: 3.139059]
+dev: 100% 1/1 [00:00<00:00,  1.27it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8667    0.5417    0.6667       144
+         sad     0.7057    0.9102    0.7950       245
+         neu     0.8455    0.7266    0.7815       384
+         ang     0.7005    0.8529    0.7692       170
+
+    accuracy                         0.7688       943
+   macro avg     0.7796    0.7578    0.7531       943
+weighted avg     0.7862    0.7688    0.7653       943
+
+12/12/2024 11:16:11 [Dev set] [f1 0.7468]
+12/12/2024 11:16:11 Save the best model.
+12/12/2024 11:16:11 [Test set] [f1 0.7653]
+train epoch 12: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:16:14 
+12/12/2024 11:16:14 [Epoch 12] [Loss: 3.455349] [Time: 3.149004]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:02<00:00,  2.12s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8681    0.5486    0.6723       144
+         sad     0.7162    0.8857    0.7920       245
+         neu     0.8343    0.7474    0.7885       384
+         ang     0.6976    0.8412    0.7627       170
+
+    accuracy                         0.7699       943
+   macro avg     0.7790    0.7557    0.7539       943
+weighted avg     0.7841    0.7699    0.7670       943
+
+12/12/2024 11:16:17 [Dev set] [f1 0.7738]
+12/12/2024 11:16:17 Save the best model.
+12/12/2024 11:16:17 [Test set] [f1 0.7670]
+train epoch 13: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:16:20 
+12/12/2024 11:16:20 [Epoch 13] [Loss: 3.339345] [Time: 3.146797]
+dev: 100% 1/1 [00:00<00:00,  1.21it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8710    0.5625    0.6835       144
+         sad     0.7230    0.8735    0.7911       245
+         neu     0.8309    0.7552    0.7913       384
+         ang     0.7024    0.8471    0.7680       170
+
+    accuracy                         0.7731       943
+   macro avg     0.7818    0.7596    0.7585       943
+weighted avg     0.7858    0.7731    0.7706       943
+
+12/12/2024 11:16:23 [Dev set] [f1 0.7883]
+12/12/2024 11:16:23 Save the best model.
+12/12/2024 11:16:23 [Test set] [f1 0.7706]
+train epoch 14: 100% 4/4 [00:03<00:00,  1.26it/s]
+12/12/2024 11:16:27 
+12/12/2024 11:16:27 [Epoch 14] [Loss: 3.375987] [Time: 3.164775]
+dev: 100% 1/1 [00:00<00:00,  1.26it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7838    0.6042    0.6824       144
+         sad     0.7010    0.8898    0.7842       245
+         neu     0.8704    0.6823    0.7650       384
+         ang     0.6909    0.8941    0.7795       170
+
+    accuracy                         0.7625       943
+   macro avg     0.7615    0.7676    0.7527       943
+weighted avg     0.7808    0.7625    0.7600       943
+
+12/12/2024 11:16:29 [Dev set] [f1 0.7785]
+12/12/2024 11:16:29 [Test set] [f1 0.7600]
+train epoch 15: 100% 4/4 [00:03<00:00,  1.17it/s]
+12/12/2024 11:16:33 
+12/12/2024 11:16:33 [Epoch 15] [Loss: 3.084618] [Time: 3.419265]
+dev: 100% 1/1 [00:00<00:00,  1.26it/s]
+test: 100% 1/1 [00:01<00:00,  1.83s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8913    0.5694    0.6949       144
+         sad     0.7115    0.8857    0.7891       245
+         neu     0.8498    0.7370    0.7894       384
+         ang     0.7089    0.8882    0.7885       170
+
+    accuracy                         0.7773       943
+   macro avg     0.7904    0.7701    0.7655       943
+weighted avg     0.7948    0.7773    0.7747       943
+
+12/12/2024 11:16:35 [Dev set] [f1 0.7990]
+12/12/2024 11:16:35 Save the best model.
+12/12/2024 11:16:35 [Test set] [f1 0.7747]
+train epoch 16: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:16:39 
+12/12/2024 11:16:39 [Epoch 16] [Loss: 3.030600] [Time: 3.136604]
+dev: 100% 1/1 [00:00<00:00,  1.27it/s]
+test: 100% 1/1 [00:01<00:00,  1.82s/it]
+              precision    recall  f1-score   support
+
+         hap     0.9130    0.5833    0.7119       144
+         sad     0.7138    0.9061    0.7986       245
+         neu     0.8681    0.7370    0.7972       384
+         ang     0.7150    0.9000    0.7969       170
+
+    accuracy                         0.7869       943
+   macro avg     0.8025    0.7816    0.7761       943
+weighted avg     0.8073    0.7869    0.7845       943
+
+12/12/2024 11:16:41 [Dev set] [f1 0.7993]
+12/12/2024 11:16:41 Save the best model.
+12/12/2024 11:16:41 [Test set] [f1 0.7845]
+train epoch 17: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:16:45 
+12/12/2024 11:16:45 [Epoch 17] [Loss: 2.942539] [Time: 3.141740]
+dev: 100% 1/1 [00:00<00:00,  1.27it/s]
+test: 100% 1/1 [00:01<00:00,  1.78s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8700    0.6042    0.7131       144
+         sad     0.7143    0.9184    0.8036       245
+         neu     0.8624    0.7344    0.7932       384
+         ang     0.7562    0.8941    0.8194       170
+
+    accuracy                         0.7911       943
+   macro avg     0.8007    0.7878    0.7823       943
+weighted avg     0.8059    0.7911    0.7884       943
+
+12/12/2024 11:16:47 [Dev set] [f1 0.8012]
+12/12/2024 11:16:47 Save the best model.
+12/12/2024 11:16:47 [Test set] [f1 0.7884]
+train epoch 18: 100% 4/4 [00:03<00:00,  1.17it/s]
+12/12/2024 11:16:51 
+12/12/2024 11:16:51 [Epoch 18] [Loss: 2.878439] [Time: 3.414190]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.81s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8426    0.6319    0.7222       144
+         sad     0.7201    0.9347    0.8135       245
+         neu     0.8896    0.7344    0.8046       384
+         ang     0.7650    0.9000    0.8270       170
+
+    accuracy                         0.8006       943
+   macro avg     0.8043    0.8003    0.7918       943
+weighted avg     0.8159    0.8006    0.7984       943
+
+12/12/2024 11:16:53 [Dev set] [f1 0.8246]
+12/12/2024 11:16:54 Save the best model.
+12/12/2024 11:16:54 [Test set] [f1 0.7984]
+train epoch 19: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:16:57 
+12/12/2024 11:16:57 [Epoch 19] [Loss: 2.776599] [Time: 3.127115]
+dev: 100% 1/1 [00:00<00:00,  1.28it/s]
+test: 100% 1/1 [00:01<00:00,  1.78s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8692    0.6458    0.7410       144
+         sad     0.7964    0.9102    0.8495       245
+         neu     0.8683    0.7552    0.8078       384
+         ang     0.7072    0.9235    0.8010       170
+
+    accuracy                         0.8091       943
+   macro avg     0.8103    0.8087    0.7998       943
+weighted avg     0.8207    0.8091    0.8072       943
+
+12/12/2024 11:16:59 [Dev set] [f1 0.7876]
+12/12/2024 11:16:59 [Test set] [f1 0.8072]
+train epoch 20: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:17:02 
+12/12/2024 11:17:02 [Epoch 20] [Loss: 2.757603] [Time: 3.131076]
+dev: 100% 1/1 [00:00<00:00,  1.28it/s]
+test: 100% 1/1 [00:01<00:00,  1.81s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8774    0.6458    0.7440       144
+         sad     0.7312    0.9551    0.8283       245
+         neu     0.8982    0.7812    0.8357       384
+         ang     0.8197    0.8824    0.8499       170
+
+    accuracy                         0.8240       943
+   macro avg     0.8316    0.8161    0.8145       943
+weighted avg     0.8375    0.8240    0.8223       943
+
+12/12/2024 11:17:05 [Dev set] [f1 0.7625]
+12/12/2024 11:17:05 [Test set] [f1 0.8223]
+train epoch 21: 100% 4/4 [00:03<00:00,  1.17it/s]
+12/12/2024 11:17:08 
+12/12/2024 11:17:08 [Epoch 21] [Loss: 2.661904] [Time: 3.413666]
+dev: 100% 1/1 [00:00<00:00,  1.24it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7652    0.7014    0.7319       144
+         sad     0.8109    0.9102    0.8577       245
+         neu     0.8690    0.7083    0.7805       384
+         ang     0.7175    0.9412    0.8142       170
+
+    accuracy                         0.8017       943
+   macro avg     0.7906    0.8153    0.7961       943
+weighted avg     0.8107    0.8017    0.7992       943
+
+12/12/2024 11:17:11 [Dev set] [f1 0.8152]
+12/12/2024 11:17:11 [Test set] [f1 0.7992]
+train epoch 22: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:17:14 
+12/12/2024 11:17:14 [Epoch 22] [Loss: 2.434422] [Time: 3.153302]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.78s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7574    0.7153    0.7357       144
+         sad     0.7756    0.9592    0.8577       245
+         neu     0.9201    0.6901    0.7887       384
+         ang     0.7222    0.9176    0.8083       170
+
+    accuracy                         0.8049       943
+   macro avg     0.7938    0.8206    0.7976       943
+weighted avg     0.8220    0.8049    0.8021       943
+
+12/12/2024 11:17:17 [Dev set] [f1 0.8070]
+12/12/2024 11:17:17 [Test set] [f1 0.8021]
+train epoch 23: 100% 4/4 [00:03<00:00,  1.29it/s]
+12/12/2024 11:17:20 
+12/12/2024 11:17:20 [Epoch 23] [Loss: 2.284080] [Time: 3.113354]
+dev: 100% 1/1 [00:00<00:00,  1.31it/s]
+test: 100% 1/1 [00:02<00:00,  2.14s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7752    0.6944    0.7326       144
+         sad     0.8127    0.9388    0.8712       245
+         neu     0.8754    0.8047    0.8385       384
+         ang     0.8483    0.8882    0.8678       170
+
+    accuracy                         0.8378       943
+   macro avg     0.8279    0.8315    0.8275       943
+weighted avg     0.8389    0.8378    0.8361       943
+
+12/12/2024 11:17:23 [Dev set] [f1 0.7847]
+12/12/2024 11:17:23 [Test set] [f1 0.8361]
+train epoch 24: 100% 4/4 [00:03<00:00,  1.26it/s]
+12/12/2024 11:17:26 
+12/12/2024 11:17:26 [Epoch 24] [Loss: 2.289480] [Time: 3.178137]
+dev: 100% 1/1 [00:00<00:00,  1.22it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8269    0.5972    0.6935       144
+         sad     0.7952    0.9510    0.8662       245
+         neu     0.8701    0.7500    0.8056       384
+         ang     0.7349    0.9294    0.8208       170
+
+    accuracy                         0.8112       943
+   macro avg     0.8068    0.8069    0.7965       943
+weighted avg     0.8197    0.8112    0.8070       943
+
+12/12/2024 11:17:29 [Dev set] [f1 0.7108]
+12/12/2024 11:17:29 [Test set] [f1 0.8070]
+train epoch 25: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:17:32 
+12/12/2024 11:17:32 [Epoch 25] [Loss: 2.151201] [Time: 3.135279]
+dev: 100% 1/1 [00:00<00:00,  1.31it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7895    0.6250    0.6977       144
+         sad     0.8848    0.8776    0.8811       245
+         neu     0.8123    0.8568    0.8340       384
+         ang     0.8564    0.9118    0.8832       170
+
+    accuracy                         0.8367       943
+   macro avg     0.8357    0.8178    0.8240       943
+weighted avg     0.8356    0.8367    0.8343       943
+
+12/12/2024 11:17:34 [Dev set] [f1 0.7574]
+12/12/2024 11:17:34 [Test set] [f1 0.8343]
+train epoch 26: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:17:37 
+12/12/2024 11:17:37 [Epoch 26] [Loss: 2.195452] [Time: 3.126285]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:02<00:00,  2.11s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7534    0.7639    0.7586       144
+         sad     0.7412    0.9469    0.8315       245
+         neu     0.9665    0.4505    0.6146       384
+         ang     0.5279    0.9471    0.6779       170
+
+    accuracy                         0.7169       943
+   macro avg     0.7472    0.7771    0.7207       943
+weighted avg     0.7963    0.7169    0.7044       943
+
+12/12/2024 11:17:40 [Dev set] [f1 0.6549]
+12/12/2024 11:17:40 [Test set] [f1 0.7044]
+train epoch 27: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:17:43 
+12/12/2024 11:17:43 [Epoch 27] [Loss: 2.042199] [Time: 3.118286]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8452    0.4931    0.6228       144
+         sad     0.8677    0.9102    0.8884       245
+         neu     0.7913    0.8490    0.8191       384
+         ang     0.8158    0.9118    0.8611       170
+
+    accuracy                         0.8218       943
+   macro avg     0.8300    0.7910    0.7979       943
+weighted avg     0.8238    0.8218    0.8147       943
+
+12/12/2024 11:17:46 [Dev set] [f1 0.7495]
+12/12/2024 11:17:46 [Test set] [f1 0.8147]
+train epoch 28: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:17:49 
+12/12/2024 11:17:49 [Epoch 28] [Loss: 1.919677] [Time: 3.160210]
+dev: 100% 1/1 [00:00<00:00,  1.28it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8252    0.5903    0.6883       144
+         sad     0.7919    0.9633    0.8692       245
+         neu     0.8571    0.7656    0.8088       384
+         ang     0.7688    0.9000    0.8293       170
+
+    accuracy                         0.8144       943
+   macro avg     0.8108    0.8048    0.7989       943
+weighted avg     0.8194    0.8144    0.8098       943
+
+12/12/2024 11:17:52 [Dev set] [f1 0.7611]
+12/12/2024 11:17:52 [Test set] [f1 0.8098]
+train epoch 29: 100% 4/4 [00:03<00:00,  1.17it/s]
+12/12/2024 11:17:55 
+12/12/2024 11:17:55 [Epoch 29] [Loss: 1.906907] [Time: 3.433328]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7730    0.7569    0.7649       144
+         sad     0.8792    0.8612    0.8701       245
+         neu     0.8404    0.7266    0.7793       384
+         ang     0.6870    0.9294    0.7900       170
+
+    accuracy                         0.8028       943
+   macro avg     0.7949    0.8185    0.8011       943
+weighted avg     0.8125    0.8028    0.8026       943
+
+12/12/2024 11:17:58 [Dev set] [f1 0.8197]
+12/12/2024 11:17:58 [Test set] [f1 0.8026]
+train epoch 30: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:18:01 
+12/12/2024 11:18:01 [Epoch 30] [Loss: 1.843937] [Time: 3.139751]
+dev: 100% 1/1 [00:00<00:00,  1.25it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7934    0.6667    0.7245       144
+         sad     0.8506    0.9061    0.8775       245
+         neu     0.8287    0.7682    0.7973       384
+         ang     0.7512    0.9059    0.8213       170
+
+    accuracy                         0.8134       943
+   macro avg     0.8060    0.8117    0.8052       943
+weighted avg     0.8150    0.8134    0.8113       943
+
+12/12/2024 11:18:04 [Dev set] [f1 0.8071]
+12/12/2024 11:18:04 [Test set] [f1 0.8113]
+train epoch 31: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:18:07 
+12/12/2024 11:18:07 [Epoch 31] [Loss: 1.753161] [Time: 3.117596]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:02<00:00,  2.08s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8125    0.6319    0.7109       144
+         sad     0.8041    0.9551    0.8731       245
+         neu     0.8558    0.6953    0.7672       384
+         ang     0.6974    0.9353    0.7990       170
+
+    accuracy                         0.7964       943
+   macro avg     0.7924    0.8044    0.7876       943
+weighted avg     0.8072    0.7964    0.7919       943
+
+12/12/2024 11:18:10 [Dev set] [f1 0.7678]
+12/12/2024 11:18:10 [Test set] [f1 0.7919]
+train epoch 32: 100% 4/4 [00:03<00:00,  1.29it/s]
+12/12/2024 11:18:13 
+12/12/2024 11:18:13 [Epoch 32] [Loss: 1.522237] [Time: 3.103670]
+dev: 100% 1/1 [00:00<00:00,  1.27it/s]
+test: 100% 1/1 [00:01<00:00,  1.81s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8571    0.5833    0.6942       144
+         sad     0.8967    0.8857    0.8912       245
+         neu     0.7904    0.8542    0.8210       384
+         ang     0.8191    0.9059    0.8603       170
+
+    accuracy                         0.8303       943
+   macro avg     0.8408    0.8073    0.8167       943
+weighted avg     0.8334    0.8303    0.8270       943
+
+12/12/2024 11:18:15 [Dev set] [f1 0.8344]
+12/12/2024 11:18:15 Save the best model.
+12/12/2024 11:18:15 [Test set] [f1 0.8270]
+train epoch 33: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:18:19 
+12/12/2024 11:18:19 [Epoch 33] [Loss: 1.545788] [Time: 3.132545]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8087    0.6458    0.7181       144
+         sad     0.8481    0.9347    0.8893       245
+         neu     0.8354    0.7135    0.7697       384
+         ang     0.7000    0.9471    0.8050       170
+
+    accuracy                         0.8028       943
+   macro avg     0.7981    0.8103    0.7955       943
+weighted avg     0.8102    0.8028    0.7993       943
+
+12/12/2024 11:18:21 [Dev set] [f1 0.7891]
+12/12/2024 11:18:21 [Test set] [f1 0.7993]
+train epoch 34: 100% 4/4 [00:03<00:00,  1.24it/s]
+12/12/2024 11:18:24 
+12/12/2024 11:18:24 [Epoch 34] [Loss: 1.460865] [Time: 3.220056]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.82s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7603    0.6389    0.6943       144
+         sad     0.8932    0.8531    0.8727       245
+         neu     0.7963    0.7839    0.7900       384
+         ang     0.7524    0.9294    0.8316       170
+
+    accuracy                         0.8059       943
+   macro avg     0.8005    0.8013    0.7971       943
+weighted avg     0.8081    0.8059    0.8044       943
+
+12/12/2024 11:18:27 [Dev set] [f1 0.8375]
+12/12/2024 11:18:27 Save the best model.
+12/12/2024 11:18:27 [Test set] [f1 0.8044]
+train epoch 35: 100% 4/4 [00:03<00:00,  1.16it/s]
+12/12/2024 11:18:31 
+12/12/2024 11:18:31 [Epoch 35] [Loss: 1.581404] [Time: 3.446723]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.81s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7913    0.6319    0.7027       144
+         sad     0.8554    0.8694    0.8623       245
+         neu     0.8128    0.7578    0.7844       384
+         ang     0.7240    0.9412    0.8184       170
+
+    accuracy                         0.8006       943
+   macro avg     0.7959    0.8001    0.7920       943
+weighted avg     0.8046    0.8006    0.7983       943
+
+12/12/2024 11:18:33 [Dev set] [f1 0.7932]
+12/12/2024 11:18:33 [Test set] [f1 0.7983]
+train epoch 36: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:18:36 
+12/12/2024 11:18:36 [Epoch 36] [Loss: 1.347232] [Time: 3.138818]
+dev: 100% 1/1 [00:00<00:00,  1.26it/s]
+test: 100% 1/1 [00:01<00:00,  1.81s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8381    0.6111    0.7068       144
+         sad     0.8645    0.8857    0.8750       245
+         neu     0.8083    0.8125    0.8104       384
+         ang     0.7811    0.9235    0.8464       170
+
+    accuracy                         0.8208       943
+   macro avg     0.8230    0.8082    0.8096       943
+weighted avg     0.8226    0.8208    0.8178       943
+
+12/12/2024 11:18:39 [Dev set] [f1 0.8307]
+12/12/2024 11:18:39 [Test set] [f1 0.8178]
+train epoch 37: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:18:42 
+12/12/2024 11:18:42 [Epoch 37] [Loss: 1.398538] [Time: 3.152623]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8155    0.5833    0.6802       144
+         sad     0.8134    0.9429    0.8733       245
+         neu     0.8300    0.7500    0.7880       384
+         ang     0.7464    0.9176    0.8232       170
+
+    accuracy                         0.8049       943
+   macro avg     0.8013    0.7985    0.7912       943
+weighted avg     0.8084    0.8049    0.8000       943
+
+12/12/2024 11:18:45 [Dev set] [f1 0.8154]
+12/12/2024 11:18:45 [Test set] [f1 0.8000]
+train epoch 38: 100% 4/4 [00:03<00:00,  1.16it/s]
+12/12/2024 11:18:48 
+12/12/2024 11:18:48 [Epoch 38] [Loss: 1.202698] [Time: 3.442081]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7449    0.5069    0.6033       144
+         sad     0.8985    0.7224    0.8009       245
+         neu     0.7329    0.8359    0.7810       384
+         ang     0.7476    0.9235    0.8263       170
+
+    accuracy                         0.7720       943
+   macro avg     0.7810    0.7472    0.7529       943
+weighted avg     0.7804    0.7720    0.7672       943
+
+12/12/2024 11:18:51 [Dev set] [f1 0.8257]
+12/12/2024 11:18:51 [Test set] [f1 0.7672]
+train epoch 39: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:18:54 
+12/12/2024 11:18:54 [Epoch 39] [Loss: 1.170545] [Time: 3.135944]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7744    0.7153    0.7437       144
+         sad     0.8734    0.8449    0.8589       245
+         neu     0.8097    0.7422    0.7745       384
+         ang     0.7285    0.9471    0.8235       170
+
+    accuracy                         0.8017       943
+   macro avg     0.7965    0.8124    0.8001       943
+weighted avg     0.8062    0.8017    0.8005       943
+
+12/12/2024 11:18:57 [Dev set] [f1 0.8391]
+12/12/2024 11:18:57 Save the best model.
+12/12/2024 11:18:57 [Test set] [f1 0.8005]
+train epoch 40: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:19:00 
+12/12/2024 11:19:00 [Epoch 40] [Loss: 1.236049] [Time: 3.132262]
+dev: 100% 1/1 [00:00<00:00,  1.28it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7787    0.6597    0.7143       144
+         sad     0.8761    0.8082    0.8408       245
+         neu     0.7811    0.7526    0.7666       384
+         ang     0.7200    0.9529    0.8203       170
+
+    accuracy                         0.7890       943
+   macro avg     0.7890    0.7934    0.7855       943
+weighted avg     0.7944    0.7890    0.7875       943
+
+12/12/2024 11:19:02 [Dev set] [f1 0.8354]
+12/12/2024 11:19:02 [Test set] [f1 0.7875]
+train epoch 41: 100% 4/4 [00:03<00:00,  1.16it/s]
+12/12/2024 11:19:06 
+12/12/2024 11:19:06 [Epoch 41] [Loss: 1.176507] [Time: 3.437322]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  1.79s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7235    0.8542    0.7834       144
+         sad     0.8537    0.8571    0.8554       245
+         neu     0.8615    0.7292    0.7898       384
+         ang     0.7822    0.9294    0.8495       170
+
+    accuracy                         0.8176       943
+   macro avg     0.8052    0.8425    0.8195       943
+weighted avg     0.8241    0.8176    0.8166       943
+
+12/12/2024 11:19:08 [Dev set] [f1 0.8591]
+12/12/2024 11:19:09 Save the best model.
+12/12/2024 11:19:09 [Test set] [f1 0.8166]
+train epoch 42: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:19:12 
+12/12/2024 11:19:12 [Epoch 42] [Loss: 1.015973] [Time: 3.143690]
+dev: 100% 1/1 [00:00<00:00,  1.29it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8939    0.4097    0.5619       144
+         sad     0.8894    0.7878    0.8355       245
+         neu     0.7185    0.8906    0.7953       384
+         ang     0.8315    0.9000    0.8644       170
+
+    accuracy                         0.7922       943
+   macro avg     0.8333    0.7470    0.7643       943
+weighted avg     0.8101    0.7922    0.7826       943
+
+12/12/2024 11:19:14 [Dev set] [f1 0.7850]
+12/12/2024 11:19:14 [Test set] [f1 0.7826]
+train epoch 43: 100% 4/4 [00:03<00:00,  1.28it/s]
+12/12/2024 11:19:18 
+12/12/2024 11:19:18 [Epoch 43] [Loss: 0.988439] [Time: 3.129944]
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+test: 100% 1/1 [00:01<00:00,  2.00s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7842    0.7569    0.7703       144
+         sad     0.8226    0.8327    0.8276       245
+         neu     0.8529    0.6042    0.7073       384
+         ang     0.5704    0.9529    0.7137       170
+
+    accuracy                         0.7497       943
+   macro avg     0.7575    0.7867    0.7547       943
+weighted avg     0.7836    0.7497    0.7493       943
+
+12/12/2024 11:19:20 [Dev set] [f1 0.7955]
+12/12/2024 11:19:20 [Test set] [f1 0.7493]
+train epoch 44: 100% 4/4 [00:03<00:00,  1.14it/s]
+12/12/2024 11:19:24 
+12/12/2024 11:19:24 [Epoch 44] [Loss: 0.943450] [Time: 3.516833]
+dev: 100% 1/1 [00:00<00:00,  1.25it/s]
+test: 100% 1/1 [00:02<00:00,  2.20s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7869    0.6667    0.7218       144
+         sad     0.8373    0.8612    0.8491       245
+         neu     0.7828    0.8073    0.7949       384
+         ang     0.8208    0.8353    0.8280       170
+
+    accuracy                         0.8049       943
+   macro avg     0.8070    0.7926    0.7984       943
+weighted avg     0.8044    0.8049    0.8038       943
+
+12/12/2024 11:19:27 [Dev set] [f1 0.8585]
+12/12/2024 11:19:27 [Test set] [f1 0.8038]
+train epoch 45: 100% 4/4 [00:03<00:00,  1.27it/s]
+12/12/2024 11:19:30 
+12/12/2024 11:19:30 [Epoch 45] [Loss: 0.959211] [Time: 3.153754]
+dev: 100% 1/1 [00:00<00:00,  1.28it/s]
+test: 100% 1/1 [00:01<00:00,  2.00s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7222    0.7222    0.7222       144
+         sad     0.8813    0.7878    0.8319       245
+         neu     0.7792    0.6250    0.6936       384
+         ang     0.6029    0.9647    0.7421       170
+
+    accuracy                         0.7434       943
+   macro avg     0.7464    0.7749    0.7475       943
+weighted avg     0.7653    0.7434    0.7427       943
+
+12/12/2024 11:19:33 [Dev set] [f1 0.7900]
+12/12/2024 11:19:33 [Test set] [f1 0.7427]
+train epoch 46: 100% 4/4 [00:03<00:00,  1.26it/s]
+12/12/2024 11:19:36 
+12/12/2024 11:19:36 [Epoch 46] [Loss: 0.866253] [Time: 3.177109]
+dev: 100% 1/1 [00:00<00:00,  1.04it/s]
+test: 100% 1/1 [00:02<00:00,  2.35s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8431    0.5972    0.6992       144
+         sad     0.7817    0.9061    0.8393       245
+         neu     0.7955    0.7396    0.7665       384
+         ang     0.7800    0.9176    0.8432       170
+
+    accuracy                         0.7932       943
+   macro avg     0.8001    0.7901    0.7871       943
+weighted avg     0.7964    0.7932    0.7890       943
+
+12/12/2024 11:19:39 [Dev set] [f1 0.8077]
+12/12/2024 11:19:39 [Test set] [f1 0.7890]
+train epoch 47: 100% 4/4 [00:03<00:00,  1.19it/s]
+12/12/2024 11:19:43 
+12/12/2024 11:19:43 [Epoch 47] [Loss: 0.885411] [Time: 3.355860]
+dev: 100% 1/1 [00:00<00:00,  1.27it/s]
+test: 100% 1/1 [00:01<00:00,  1.85s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8557    0.5764    0.6888       144
+         sad     0.8841    0.7469    0.8097       245
+         neu     0.7417    0.8750    0.8029       384
+         ang     0.8280    0.9059    0.8652       170
+
+    accuracy                         0.8017       943
+   macro avg     0.8274    0.7761    0.7916       943
+weighted avg     0.8116    0.8017    0.7985       943
+
+12/12/2024 11:19:45 [Dev set] [f1 0.8209]
+12/12/2024 11:19:45 [Test set] [f1 0.7985]
+train epoch 48: 100% 4/4 [00:03<00:00,  1.14it/s]
+12/12/2024 11:19:49 
+12/12/2024 11:19:49 [Epoch 48] [Loss: 0.970975] [Time: 3.500805]
+dev: 100% 1/1 [00:00<00:00,  1.22it/s]
+test: 100% 1/1 [00:01<00:00,  1.92s/it]
+              precision    recall  f1-score   support
+
+         hap     0.5990    0.8611    0.7066       144
+         sad     0.8362    0.7918    0.8134       245
+         neu     0.8309    0.5885    0.6890       384
+         ang     0.6853    0.9353    0.7910       170
+
+    accuracy                         0.7455       943
+   macro avg     0.7379    0.7942    0.7500       943
+weighted avg     0.7706    0.7455    0.7424       943
+
+12/12/2024 11:19:52 [Dev set] [f1 0.7987]
+12/12/2024 11:19:52 [Test set] [f1 0.7424]
+train epoch 49: 100% 4/4 [00:03<00:00,  1.24it/s]
+12/12/2024 11:19:55 
+12/12/2024 11:19:55 [Epoch 49] [Loss: 0.833725] [Time: 3.214851]
+dev: 100% 1/1 [00:01<00:00,  1.07s/it]
+test: 100% 1/1 [00:01<00:00,  1.85s/it]
+              precision    recall  f1-score   support
+
+         hap     0.8875    0.4931    0.6339       144
+         sad     0.8235    0.8571    0.8400       245
+         neu     0.7634    0.7812    0.7722       384
+         ang     0.7209    0.9118    0.8052       170
+
+    accuracy                         0.7805       943
+   macro avg     0.7988    0.7608    0.7628       943
+weighted avg     0.7903    0.7805    0.7746       943
+
+12/12/2024 11:19:58 [Dev set] [f1 0.8304]
+12/12/2024 11:19:58 [Test set] [f1 0.7746]
+train epoch 50: 100% 4/4 [00:03<00:00,  1.21it/s]
+12/12/2024 11:20:01 
+12/12/2024 11:20:01 [Epoch 50] [Loss: 0.704938] [Time: 3.307336]
+dev: 100% 1/1 [00:00<00:00,  1.28it/s]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7386    0.7847    0.7609       144
+         sad     0.8571    0.8816    0.8692       245
+         neu     0.8589    0.7135    0.7795       384
+         ang     0.7215    0.9294    0.8123       170
+
+    accuracy                         0.8070       943
+   macro avg     0.7940    0.8273    0.8055       943
+weighted avg     0.8153    0.8070    0.8059       943
+
+12/12/2024 11:20:04 [Dev set] [f1 0.8492]
+12/12/2024 11:20:04 [Test set] [f1 0.8059]
+12/12/2024 11:20:04 
+12/12/2024 11:20:04 Best in epoch 41:
+dev: 100% 1/1 [00:00<00:00,  1.30it/s]
+12/12/2024 11:20:04 [Dev set] [f1 0.8591]
+test: 100% 1/1 [00:01<00:00,  1.80s/it]
+              precision    recall  f1-score   support
+
+         hap     0.7235    0.8542    0.7834       144
+         sad     0.8537    0.8571    0.8554       245
+         neu     0.8615    0.7292    0.7898       384
+         ang     0.7822    0.9294    0.8495       170
+
+    accuracy                         0.8176       943
+   macro avg     0.8052    0.8425    0.8195       943
+weighted avg     0.8241    0.8176    0.8166       943
+
+12/12/2024 11:20:06 [Test set] f1 0.8166454011999724
